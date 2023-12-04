@@ -41,6 +41,10 @@ app.get('/webhook', (req,res) =>{
     }
 });
 
+app.get('/', (req,res) =>{
+    res.status(200).send('Hola a mi bot!')
+});
+
 app.listen(3000, () =>{
     
     console.log('servidor iniciando...')
